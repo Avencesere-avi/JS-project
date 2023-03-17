@@ -1,0 +1,54 @@
+
+
+// In javascript we can write function in two ways 
+
+
+// 1. directly write function and then name of the funtion , then open and close parathesiis then body and return some from it , 
+
+
+
+function deposit()
+{
+    console.log("The return in new type of function  is ");
+    return 1;
+}
+
+const x = deposit();
+console.log(x);
+
+// 2. the second way of writing function in ES6 is :
+
+// whatever will be the return value keep them in some variable or constant then make open and close paranthesis then => (arrow) then body part . 
+
+
+const y =()=> 
+{
+    console.log("The return in ES 6 type of funciton is ");
+    return 1;
+
+}
+
+console.log(y);
+
+--------------------------------------------------------------------------
+
+
+As what i studied that in JS u cant take input or collect input from the user from promt funciton but here not in node 
+
+in node we have to use promit sync package to collect the input we can intall it by : npm i prompt-sync .
+
+const prompt = require("prompt-sync")();
+
+
+
+--------------------------------------------------------------------------
+
+
+Now we are taking input in the string form so we have to change in any number type specific format ...
+
+for eg if user will put amount in -ve , or in string then how we will manage .
+
+so we can parse.Float(); so that it can we change into float value ..
+
+if user puts -ve no. or any NaN(String) then error will show .
+
